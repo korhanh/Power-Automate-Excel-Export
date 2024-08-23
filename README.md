@@ -6,6 +6,8 @@ This project provides a solution for exporting data from a SharePoint list to Ex
 
 1. **Create a SharePoint List**:
    - Set up your SharePoint list with the necessary columns such as ID, Musteri_Name, Sip_No, and DHL.
+     
+![image-1](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/1.PNG)
 
 2. **Create a Power Automate Flow**:
    - Log in to Power Automate and create a new flow.
@@ -13,8 +15,13 @@ This project provides a solution for exporting data from a SharePoint list to Ex
 3. **Set Up the Trigger**:
    - Select the SharePoint trigger "Recurrence" to schedule the flow at your desired intervals (e.g., daily, weekly).
 
+![image-2](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/2.PNG)
+
 4. **Get Items**:
    - Add the SharePoint action "Get items" to retrieve the data from your list.
+
+![image-3](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/3.PNG)
+
 
 5. **Send Data to API**:
    - Add an HTTP action to send the data to an API service:
@@ -43,12 +50,21 @@ This project provides a solution for exporting data from a SharePoint list to Ex
        ```
      - **Important**: Ensure that the column names in the `allowed_columns` section of the JSON body exactly match the column names in your SharePoint list. For instance, if your SharePoint list has a column named "Customer Name," it must be specified as `"Musteri_Name": "Customer Name"` in the JSON.
 
+![image-4](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/4.PNG)
+
+
 6. **Receive and Send Excel File**:
    - After receiving the data from the API, add an action to compose the Excel file content and then send it via email.
 
    - **Create File**: Use the output from the API to create an Excel file.
 
+![image-5](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/5.png)
+
+![image-6](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/6.PNG)
+
    - **Send Email**: Add the "Send an email" action to email the Excel file.
+
+![image-6](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/7.PNG)
 
 ## Features
 
@@ -74,7 +90,7 @@ Contributions to this project are welcome! If you encounter any issues or have s
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/your-repository/LICENSE).
+This project is licensed under the [MIT License](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/LICENSE).
 
 Feel free to use, modify, and distribute this project according to the terms specified in the license.
 
