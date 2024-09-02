@@ -96,6 +96,6 @@ Feel free to use, modify, and distribute this project according to the terms spe
 
 ## Credits
 
-This project is created and maintained by [your-github-username](https://github.com/your-github-username).
+This project is created and maintained by [korhanh]([link_to_your_github_profile](https://github.com/korhanh)).
 
 If you use this project or find it helpful, consider giving it a star on GitHub!
