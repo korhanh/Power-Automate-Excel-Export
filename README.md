@@ -50,7 +50,7 @@ This project provides a solution for exporting data from a SharePoint list to Ex
        ```
      - **Important**: Ensure that the column names in the `allowed_columns` section of the JSON body exactly match the column names in your SharePoint list. For instance, if your SharePoint list has a column named "Customer Name," it must be specified as `"Musteri_Name": "Customer Name"` in the JSON.
 
-![image-5.1](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/5.1.png)
+![image-4.1](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/4.1.png)
 
 
 6. **Receive and Send Excel File**:
