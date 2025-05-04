@@ -26,7 +26,7 @@ This project provides a solution for exporting data from a SharePoint list to Ex
 5. **Send Data to API**:
    - Add an HTTP action to send the data to an API service:
      - **Method**: POST
-     - **URI**: https://zetaleap.com/process_excell/
+     - **URI**: https://zetaleap.com/process_excell/excel/
      - **Headers**: Authorization Bearer (Visit : https://zetaleap.com/)
      - **Body**:
        ```json
@@ -50,7 +50,7 @@ This project provides a solution for exporting data from a SharePoint list to Ex
        ```
      - **Important**: Ensure that the column names in the `allowed_columns` section of the JSON body exactly match the column names in your SharePoint list. For instance, if your SharePoint list has a column named "Customer Name," it must be specified as `"Musteri_Name": "Customer Name"` in the JSON.
 
-![image-4.1](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/4.1.PNG)
+![image-4.1](https://github.com/korhanh/Power-Automate-Excel-Export/blob/main/4.PNG)
 
 
 6. **Receive and Send Excel File**:
